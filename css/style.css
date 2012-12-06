@@ -1,0 +1,15 @@
+.container {
+  width: 600px;
+  margin: auto;
+  font-family: sans-serif;
+}
+footer {
+  font-size: 80%;
+}
+
+article div.player,
+article div.files,
+article div.content {
+  padding: 5px;
+  border-bottom: 1px solid silver;
+}

@@ -1,13 +1,21 @@
 <article>
     <header>
-        {{ post.heading }}
+        <h3>{{ post.heading }}</h3>
     </header>
-    <div>
+    <div class="content">
         {{ post.content }}
     </div>
-    <div>
+    <div class="player">
+        <audio controls autobuffer>
         {% for file in post.files %}
-            <a href="{{file.path}}"> {{file.text}} </a>
+            <source src="{{file.path}}" />
+        {% endfor %}
+        </audio>
+    </div>
+    <div class="files">
+        Downloads: 
+        {% for file in post.files %}
+            <a href="{{file.path}}"> {{file.text}} </a> | 
         {% endfor %}
     </div>
 </article>
