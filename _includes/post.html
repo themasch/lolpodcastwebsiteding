@@ -1,0 +1,13 @@
+<article>
+    <header>
+        {{ post.heading }}
+    </header>
+    <div>
+        {{ post.content }}
+    </div>
+    <div>
+        {% for file in post.files %}
+            <a href="{{file.path}}"> {{file.text}} </a>
+        {% endfor %}
+    </div>
+</article>
