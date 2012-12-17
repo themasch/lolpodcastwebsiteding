@@ -7,6 +7,18 @@ footer {
   font-size: 80%;
 }
 
+header h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    margin-top: 1em;
+}
+articl ul {
+    margin: 0;
+}
+
 article div.player,
 article div.files,
 article div.content {
